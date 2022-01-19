@@ -1,0 +1,10 @@
+C:\Users\rojha\source\repos\WinForm\AliKemal\bin\Debug\AliKemal.exe.config
+C:\Users\rojha\source\repos\WinForm\AliKemal\bin\Debug\AliKemal.exe
+C:\Users\rojha\source\repos\WinForm\AliKemal\bin\Debug\AliKemal.pdb
+C:\Users\rojha\source\repos\WinForm\AliKemal\obj\Debug\AliKemal.csproj.AssemblyReference.cache
+C:\Users\rojha\source\repos\WinForm\AliKemal\obj\Debug\AliKemal.Form1.resources
+C:\Users\rojha\source\repos\WinForm\AliKemal\obj\Debug\AliKemal.Properties.Resources.resources
+C:\Users\rojha\source\repos\WinForm\AliKemal\obj\Debug\AliKemal.csproj.GenerateResource.cache
+C:\Users\rojha\source\repos\WinForm\AliKemal\obj\Debug\AliKemal.csproj.CoreCompileInputs.cache
+C:\Users\rojha\source\repos\WinForm\AliKemal\obj\Debug\AliKemal.exe
+C:\Users\rojha\source\repos\WinForm\AliKemal\obj\Debug\AliKemal.pdb

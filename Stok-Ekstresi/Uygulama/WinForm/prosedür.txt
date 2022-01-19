@@ -1,0 +1,22 @@
+-- =============================================
+-- Author:		<Ali Kemal PARLAK>
+-- Create date: <19.01.2022>
+-- Description:	<Proje>
+-- =============================================
+ALTER PROCEDURE prosedur
+	@MALKODU			varchar(100),
+	@BASLANGIC_TARIHI	smalldatetime,
+	@BITIS_TARIHI		smalldatetime
+AS
+BEGIN
+	SELECT
+	ROW_NUMBER() OVER(ORDER BY I.Tarih) as SiraNo,
+	CASE WHEN I.IslemTur = 1 THEN 'Çıkış' ELSE 'Giriş' END AS IslemTur, 
+	I.EvrakNo, 
+	CONVERT(varchar(15), CAST(I.Tarih - 2 AS datetime), 104) AS Tarih,
+	CASE WHEN I.IslemTur = 0 THEN I.Miktar ELSE 0 END as GirisMiktar,
+	CASE WHEN I.IslemTur = 1 THEN I.Miktar Else 0 END as CikisMiktar
+	FROM STI	I
+	INNER JOIN STK		K	ON K.MalKodu = I.MalKodu
+	WHERE I.MalKodu = @MALKODU AND Tarih >= @BASLANGIC_TARIHI AND Tarih <= @BITIS_TARIHI
+END
